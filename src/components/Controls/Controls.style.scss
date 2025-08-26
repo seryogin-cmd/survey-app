@@ -1,0 +1,48 @@
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 0 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.control-button {
+  font-family: Comic Sans MS, Tahoma, sans-serif;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  &:disabled {
+    opacity: 0.5;
+    background-color: #cccccc;
+    color: #666666;
+    pointer-events: none;
+  }
+
+  &:hover {
+    bottom: 2px;
+    left: 2px;
+    -webkit-box-shadow: -7px 7px 5px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: -7px 7px 5px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  &:active {
+    bottom: 0;
+    left: 0;
+    box-shadow: none;
+  }
+}
+
+.page-indicator {
+  font-size: 0.9rem;
+  color: #666666;
+  font-weight: 500;
+}
